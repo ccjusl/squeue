@@ -1,0 +1,13 @@
+{
+  "uid": "admin",
+  "name": "Codeclub jusl",
+  "image": "https://avatars1.githubusercontent.com/u/26524722?s=400&u=5e74ef9bff9ce8ff1fe9cc9e5da70a6d1560bd9e&v=4",
+  "url": "https://squeue.netlify.com",
+  "location": "India",
+  "bio": "Jadavpur University Codeclub",
+  "socialUrls": [
+    "https://github.com/jusl",
+    "https://twitter.com/CodeClubJUSL",
+    "mailto:codeclubjusl@gmail.com"
+  ]
+}
