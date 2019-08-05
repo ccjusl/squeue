@@ -12,13 +12,16 @@ A blog by Codeclub jusl.
 ## Getting Started
 
 1. Install [NodeJS](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/lang/en/docs/install/).
-2. Fork this repo, clone and then install.
+2. Fork this repo.
+3. Clone, setup and then install.
 
 ```sh
 git clone https://github.com/<your_username>/<repo_name>.git # Clone the project
 cd repo_name
+git remote set-url origin https://github.com/jusl/squeue.git
+git remote set-url --push origin https://github.com/<your_username>/squeue.git
 yarn install # Please do not use npm
-gatsby develop
+gatsby develop # or, `yarn develop`
 ```
 
 ## Content

@@ -6,11 +6,11 @@ cover: "images/room.jpg"
 date: "2019-08-03"
 slug: "codeclubjusl-launches-blog-squeue"
 tags:
-- squeue
-- blog
-- codeclub
-- codeclubjusl
-- launch
+  - squeue
+  - blog
+  - codeclub
+  - codeclubjusl
+  - launch
 ---
 
 Hello! :wave:
