@@ -21,7 +21,7 @@ cd repo_name
 git remote set-url origin https://github.com/jusl/squeue.git
 git remote set-url --push origin https://github.com/<your_username>/squeue.git
 yarn install # Please do not use npm
-gatsby develop # or, `yarn develop`
+yarn develop # or, `gatsby develop`
 ```
 
 ## Content

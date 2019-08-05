@@ -3,8 +3,8 @@ title: "Coming in Hot"
 category: "Tech"
 author: "admin"
 cover: "images/room.jpg"
-date: "2019-08-03"
-slug: "codeclubjusl-launches-blog-squeue"
+date: "2019-08-01"
+slug: "coming-in-hot-squeue"
 tags:
   - squeue
   - blog
@@ -13,7 +13,7 @@ tags:
   - launch
 ---
 
-Hello! :wave:
+Hello! 👋
 Every community needs a space where people can share what they've learnt and in that process, also help others in learning new things.
 We thought about this for quite a while, and a blog was the first thing that popped up in our heads when choosing a platform for something like this.
 
@@ -22,4 +22,4 @@ We have a lot of ideas in mind to fill the blog with, but to do that, we'll firs
 
 For the time being, we just plan on writing quality stuff until it picks up pace.
 
-Hoping to see you make your first contribution soon. :eyes:
+Hoping to see you make your first contribution soon. 👀
