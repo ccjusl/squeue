@@ -3,7 +3,7 @@ title: "Introduction to Loops"
 category: "programming"
 author: "mr-devil"
 cover: "images/coding-wallpaper.jpg"
-date: "2019-08-07"
+date: "2019-08-08"
 slug: "intro-to-loops"
 tags:
   - programming
