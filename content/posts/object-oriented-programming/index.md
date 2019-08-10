@@ -13,7 +13,7 @@ tags:
   - encapsulation
 ---
 
-You sit for any technical interview be it for Microsoft, DE Shaw or TCS the most frequent questions are related to Object-oriented programming(OOP). So in this blog we will try to get an overview of what is OOP and will understand all it's features in depth ..
+If you sit for any technical interview be it for Microsoft, DE Shaw or TCS the most frequent questions are related to Object-oriented programming(OOP). So in this blog we will try to get an overview of what is OOP and will understand all it's features in depth ..
 
 ---
 
@@ -35,7 +35,7 @@ Consider a class Car, any car of any brand have wheels, engine, speed, mileage, 
 
 But we don't have existence of anything called car, what we have Maruti Suzuki Swift, Hyundai Santro, Mercedes Benz(everybody wants it :P),so these are objects or instances of class car.
 
-```c++
+```cpp
 class Person 
 { 
 	String name;
@@ -57,10 +57,10 @@ The Objects Oriented programming language supports all the features of procedura
 
 The most important features of Object Oriented programming are:
 
-..*Encapsulation
-..*Abstraction
-..*Polymorphism
-..*Inheritance
+Encapsulation
+Abstraction
+Polymorphism
+Inheritance
 
 We will look into each of them in detail....
 
@@ -79,7 +79,7 @@ For example again consider Car, we know that we can stop car by pressing brakes,
 
 ###Benefits of encapsulation:
 
-..* **Encapsulated classes are easier to use and reduce the complexity of your programs**
+**Encapsulated classes are easier to use and reduce the complexity of your programs**
 
 If a class is fully encapsulated then to use it we only need to know it's function names,what parameters it takes and it's return type.We can use it in the same manner until and unless these three things are the same irrespective of implementation.
 
@@ -88,13 +88,13 @@ but users of class can use it in a consistent manner.
 
 All of the classes in the C++ standard library are encapsulated. Imagine how much more complicated C++ would be if you had to understand how std::string, std::vector, or std::cout were implemented in order to use them!
 
-..* **Encapsulated classes help protect your data and prevent misuse**
+**Encapsulated classes help protect your data and prevent misuse**
 
 Global variables are accessible by everyone thus anyone can change it's value so is public class members.
 
 For example, let us again consider our Car class, having attribute for number of wheels
 
-```c++
+```cpp
 class Car
 {
 	public:
@@ -106,7 +106,7 @@ As noOfWheels is public any user can change it's value to 3 or 5, imagine such a
 
 We can also help protect the user from mistakes in using our class. Consider a class with a public array member variable:
 
-```c++
+```cpp
 class Array
 {
 public:
@@ -116,7 +116,7 @@ public:
 
 If users can access the array directly, they could subscript the array with an invalid index, producing unexpected results:
 
-```c++
+```cpp
 int main()
 {
     Array array;
@@ -126,7 +126,7 @@ int main()
 
 However, if we make the array private, we can force the user to use a function that validates that the index is valid first:
 
-```c++
+```cpp
 class Array
 {
 private:
@@ -146,11 +146,11 @@ public:
 
 In this way, we’ve protected the integrity of our program.
 
-..* **Encapsulated classes are easier to change**
+**Encapsulated classes are easier to change**
 
 Consider this simple example:
 
-```c++
+```cpp
 class Value
 {
 public:
@@ -183,7 +183,7 @@ Let us take an example of television. Encapsulation is the internal circuits, LE
 First we need to know **"what is virtual function"**? 
 A virtual function is a special type of function that, when called, resolves to the most-derived version of the function that exists between the base and derived class. 
 
-```c++
+```cpp
 class Base
 {
 public:
@@ -206,14 +206,14 @@ int main()
 }
 ```
 
-Output:
+Output:  
 **rBase is Derived**
 
 This capability for one variable to take many(poly) forms(morph) is known  as polymorphism. 
 
 For example let's consider base class Animal every animal has some way to speak, dog barks, cat meows and so on. 
 
-```c++
+```cpp
 class Animal
 {
     virtual String speak()=0;
@@ -228,7 +228,7 @@ It actually says speak is pure virtual function which means it doesn't have any 
 
 Now we can have Cat, Dog as derived class of Animal which have a particular style of speaking. 
 
-```c++
+```cpp
 class Cat
 {
     String speak() 
@@ -257,9 +257,9 @@ int main()
 }
 ```
 
-Output:
+Output:  
 
-**meow**
+**meow**   
 **bark**
 
 In first case when a.speak() is evaluated, the program notes that Animal::speak() is a virtual function. In the case where **animal** is referencing the Animal portion of a Cat object, the program looks at all the classes between Animal and Cat to see if it can find a more derived function. In that case, it finds Cat::speak(). In the second case where **animal** references the Animal portion of a Dog object, the program resolves the function call to Dog::speak()
@@ -278,10 +278,10 @@ Inheritance forms an "**is a**" relationship. Triangle is a shape, apple is a fr
 
 ###Benefits of inheritance:
 
-...* **Reusability**- Allows derived class to use base class public functions this reducing code duplication.
+**Reusability**- Allows derived class to use base class public functions this reducing code duplication.
 
-..* **Extensibility**- extend the base class logic in derived class
+**Extensibility**- extend the base class logic in derived class
 
-..* **Overriding**- We can override base class function in derived class to change it's functionality. 
+**Overriding**- We can override base class function in derived class to change it's functionality. 
 
 That's all I wanted to tell you about OOP, I hope after this you will be able to answer questions related to OOP confidently. :)
