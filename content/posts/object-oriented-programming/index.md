@@ -1,7 +1,8 @@
 ---
 title: "Object Oriented Programming"
 category: "programming"
-cover: "cover.jpeg"
+author: "krishmi"
+cover: "/images/cover-oop.jpeg"
 date: "2019-08-10"
 slug: "object-oriented-programming"
 tags:
@@ -36,19 +37,20 @@ Consider a class Car, any car of any brand have wheels, engine, speed, mileage, 
 But we don't have existence of anything called car, what we have Maruti Suzuki Swift, Hyundai Santro, Mercedes Benz(everybody wants it :P),so these are objects or instances of class car.
 
 ```cpp
-class Person 
-{ 
+class Person
+{
 	String name;
-public: 
+public:
 	Person(String personName):name(personName)
 	{}
-}; 
+};
 
-int main() 
-{ 
-	Person p("Krishna Mishra"); // p is a person with name Krishna Mishra 
-} 
+int main()
+{
+	Person p("Krishna Mishra"); // p is a person with name Krishna Mishra
+}
 ```
+
 ---
 
 ##FEATURES OF OOP:
@@ -65,6 +67,7 @@ Inheritance
 We will look into each of them in detail....
 
 ---
+
 ##ENCAPSULATION
 
 In object-oriented programming, Encapsulation (also called **information hiding**) is the process of keeping the details about how an object is implemented, hidden away from users of the object. Instead, users of the object access the object through a public interface. In this way, users are able to use the object without having to understand how it is implemented.
@@ -131,14 +134,14 @@ class Array
 {
 private:
     int mArray[10]; // user can not access this directly any more
- 
+
 public:
     void setValue(int index, int value)
     {
         // If the index is invalid, do nothing
         if (index < 0 || index >= 10)
             return;
- 
+
         mArray[index] = value;
     }
 };
@@ -156,7 +159,7 @@ class Value
 public:
     int mValue;
 };
- 
+
 int main()
 {
     Value v;
@@ -176,12 +179,10 @@ Abstraction lets you focus on what the object does instead of how it does, while
 
 Let us take an example of television. Encapsulation is the internal circuits, LEDS, etc that combine to make it a TV. Abstraction is the on-off, sound, channel setting and other buttons provided to operate it.
 
-
-
 ##POLYMORPHISM
 
-First we need to know **"what is virtual function"**? 
-A virtual function is a special type of function that, when called, resolves to the most-derived version of the function that exists between the base and derived class. 
+First we need to know **"what is virtual function"**?
+A virtual function is a special type of function that, when called, resolves to the most-derived version of the function that exists between the base and derived class.
 
 ```cpp
 class Base
@@ -189,29 +190,29 @@ class Base
 public:
     virtual const char* getName() { return "Base"; } // note addition of virtual keyword
 };
- 
+
 class Derived: public Base
 {
 public:
     const char* getName() { return "Derived"; }
 };
- 
+
 int main()
 {
     Derived derived;
     Base &rBase = derived;
     std::cout << "rBase is a " << rBase.getName() << '\n';
- 
+
     return 0;
 }
 ```
 
-Output:  
+Output:
 **rBase is Derived**
 
-This capability for one variable to take many(poly) forms(morph) is known  as polymorphism. 
+This capability for one variable to take many(poly) forms(morph) is known as polymorphism.
 
-For example let's consider base class Animal every animal has some way to speak, dog barks, cat meows and so on. 
+For example let's consider base class Animal every animal has some way to speak, dog barks, cat meows and so on.
 
 ```cpp
 class Animal
@@ -221,17 +222,17 @@ class Animal
 ```
 
 What does this line mean
-   
+
 virtual speak()=0;
 
-It actually says speak is pure virtual function which means it doesn't have any implementation because it doesn't make sense for animal. 
+It actually says speak is pure virtual function which means it doesn't have any implementation because it doesn't make sense for animal.
 
-Now we can have Cat, Dog as derived class of Animal which have a particular style of speaking. 
+Now we can have Cat, Dog as derived class of Animal which have a particular style of speaking.
 
 ```cpp
 class Cat
 {
-    String speak() 
+    String speak()
     {
         return "meow";
     }
@@ -239,13 +240,13 @@ class Cat
 
 class Dog
 {
-    String speak() 
+    String speak()
     {
         return "bark";
     }
 };
 
-int main() 
+int main()
 {
     Dog dog;
     Cat cat;
@@ -257,22 +258,22 @@ int main()
 }
 ```
 
-Output:  
+Output:
 
-**meow**   
+**meow**
 **bark**
 
 In first case when a.speak() is evaluated, the program notes that Animal::speak() is a virtual function. In the case where **animal** is referencing the Animal portion of a Cat object, the program looks at all the classes between Animal and Cat to see if it can find a more derived function. In that case, it finds Cat::speak(). In the second case where **animal** references the Animal portion of a Dog object, the program resolves the function call to Dog::speak()
 
-This is polymorphism. 
+This is polymorphism.
 
 ##INHERITANCE
 
-Consider triangle and quadrilateral although they are different shapes they have features in common as they are shape. All shapes have perimeter, area, etc. 
+Consider triangle and quadrilateral although they are different shapes they have features in common as they are shape. All shapes have perimeter, area, etc.
 
 We can say triangle and quadrilateral inherit these features from shapes.
 
-Inheritance forms an "**is a**" relationship. Triangle is a shape, apple is a fruit and so on. 
+Inheritance forms an "**is a**" relationship. Triangle is a shape, apple is a fruit and so on.
 
 ![shape-hieararchy](shape.png)
 
@@ -282,6 +283,6 @@ Inheritance forms an "**is a**" relationship. Triangle is a shape, apple is a fr
 
 **Extensibility**- extend the base class logic in derived class
 
-**Overriding**- We can override base class function in derived class to change it's functionality. 
+**Overriding**- We can override base class function in derived class to change it's functionality.
 
 That's all I wanted to tell you about OOP, I hope after this you will be able to answer questions related to OOP confidently. :)
