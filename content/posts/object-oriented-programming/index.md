@@ -206,7 +206,7 @@ int main()
 }
 ```
 
-Output:
+Output:  
 **rBase is Derived**
 
 This capability for one variable to take many(poly) forms(morph) is known  as polymorphism. 
@@ -257,9 +257,9 @@ int main()
 }
 ```
 
-Output:
+Output:  
 
-**meow**
+**meow**   
 **bark**
 
 In first case when a.speak() is evaluated, the program notes that Animal::speak() is a virtual function. In the case where **animal** is referencing the Animal portion of a Cat object, the program looks at all the classes between Animal and Cat to see if it can find a more derived function. In that case, it finds Cat::speak(). In the second case where **animal** references the Animal portion of a Dog object, the program resolves the function call to Dog::speak()
