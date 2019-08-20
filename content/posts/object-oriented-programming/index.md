@@ -260,8 +260,8 @@ int main()
 
 Output:
 
-**meow**
-**bark**
+**meow**  
+**bark**  
 
 In first case when a.speak() is evaluated, the program notes that Animal::speak() is a virtual function. In the case where **animal** is referencing the Animal portion of a Cat object, the program looks at all the classes between Animal and Cat to see if it can find a more derived function. In that case, it finds Cat::speak(). In the second case where **animal** references the Animal portion of a Dog object, the program resolves the function call to Dog::speak()
 
