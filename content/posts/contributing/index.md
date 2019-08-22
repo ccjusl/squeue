@@ -18,7 +18,7 @@ tags:
 
 ##What will you need? 🔧
 
-1. Familiarity with **git** and **github**. [_This_](/git-workflow) is a great introduction to git by Karan Singh.
+1. Familiarity with **git** and **github**. [_This_](/git-workflow) is a great introduction to git by Karan Singh. If you want to dive deeper into version control systems, check out this course on Udacity- https://classroom.udacity.com/courses/ud123.
 2. A cool text editor/IDE. I would recommend [**VS Code**](https://code.visualstudio.com/).
 3. A nice modern **browser**.
 4. Install [**NodeJS**](https://nodejs.org/en/download) and [**yarn**](https://yarnpkg.com/lang/en/docs/install). (You need not know about nodejs or yarn, just use it)
