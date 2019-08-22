@@ -1,6 +1,6 @@
 ---
 title: "Start Building Apps | Android App Development"
-date: "2019-08-03"
+date: "2019-08-04"
 author: "mr-redible"
 category: "Android app development"
 slug: "android-start-building-apps"
