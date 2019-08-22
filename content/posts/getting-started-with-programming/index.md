@@ -3,7 +3,7 @@ title: "Getting started with programming"
 category: "programming"
 author: "mr-devil"
 cover: "images/coding-wallpaper.jpg"
-date: "2019-08-03"
+date: "2019-08-04"
 slug: "getting-started-with-programming"
 tags:
   - programming

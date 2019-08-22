@@ -1,6 +1,6 @@
 ---
 title: Getting Started | Android App Development
-date: "2019-08-02"
+date: "2019-08-03"
 author: "mr-redible"
 category: "Android app development"
 slug: "android-getting-started"
