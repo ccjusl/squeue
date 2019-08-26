@@ -19,6 +19,48 @@ Futhermore, your fear for **nested loops** will go away only when you think of t
 ---
 
 ####Problem-1
+You are given a number `n` by the user (who is running your code) and you have to print the sum of the squares of the numbers from `1` to `n`.
+
+```
+For n = 4 => (1 + 4 + 9 + 16) => 30
+For n = 3 => (1 + 4 + 9) => 14
+```
+
+Time to take a pause and try to think of a solution before moving ahead.
+#####Approach
+Did you think of using loops here ? Why do we use loops ? For some kind of repetitive tasks. Right ? Did you find any kind of repetitive task here ? Think about it once again!
+
+Let's understand it. Here, we have to add the value of `i*i` where `i` ranges from `1` to `n`. Isn't it repetitive ?
+
+#####Complete solution
+
+1. Take value of `n` from user.
+2. Take a variable (say `sum`) to store the answer
+3. Write a loop that will run `n` times :
+   - Add the value of square of current element to `sum`
+
+```c
+#include <stdio.h>
+
+int main(){
+  int n, sum = 0;
+  // take user input
+  printf("Enter the value of n: ");
+  scanf("%d",&n);
+
+  int j;
+  for(j = 1; j <= n; j++){
+    // add the value of current element's square
+    sum = sum + j*j;
+  }
+  printf("%d",sum);
+  return 0;
+}
+```
+
+---
+
+####Problem-2
 You are given a number `n` by the user (who is running your code) and you have to print the following pattern on the screen
 
 ```
@@ -41,7 +83,7 @@ Time to take a pause and try to think of a solution before moving ahead.
 #####Approach
 Remember the use of loops. They are used to avoid some kind of repetitive tasks. So, do you find any repetitive task here 🤔?
 
-Let me help you out. Notice at each line we are printing same thing (i.e. a sequence of stars(`*`)). This is repetitive taks right ? So, now we know how to do this using `for` loops. We just need to think about logic for printing a single line of stars and we can use `for` (or `while`) loops to repeat that `n` times!
+Let me help you out. Notice at each line we are printing same thing (i.e. a sequence of stars(`*`)). This is repetitive tasks right ? So, now we know how to do this using `for` loops. We just need to think about logic for printing a single line of stars and we can use `for` (or `while`) loops to repeat that `n` times!
 
 Cool! So, now we just have to right the logic for printing a single line of stars. How to do that ? Well what if I say we can find something repetitive here too 😋. Guess what ?
 
@@ -66,7 +108,7 @@ int main(){
   for(j = 0; j < n; j++){
     int i;
     // To print a single line of stars
-    for(int i = 0; i < n; i++){
+    for(i = 0; i < n; i++){
       printf("*");
     }
     // Go to the next line after printing a line
@@ -78,13 +120,13 @@ int main(){
 
 ---
 
-####Problem-2
+####Problem-3
 You are given a number `n` by the user (who is running your code) and you have to print the following pattern on the screen
 
 ```
 For n = 3:
 1 2 3
-5 4 6
+4 5 6
 7 8 9
 
 For n = 2:
@@ -98,7 +140,7 @@ Time to take a pause and try to think of a solution before moving ahead.
 #####Approach
 Again the same question. Do you find any repetitive task here 🤔?
 
-Let's see ! Notice, we have to print `n` numbers in one line. Isn't it is repetitive ? And also suppose there is variable (say `X`) which will give us what number comes next (i.e. suppose magically every time we print `X` it will correctly print the number at that specific position). Now what we are printing in each line ? `X` right ? Now, it is also repetative !
+Let's see ! Notice, we have to print `n` numbers in one line. Isn't it repetitive ? And also suppose there is variable (say `X`) which will give us what number comes next (i.e. suppose magically every time we print `X` it will correctly print the number at that specific position). Now what we are printing in each line ? `X` right ? Now, it is also repetative !
 
 As you know there is no magic in world of programming. Everything has a proper reason behind it! So, we have to find the value of `X` at each position. What is the value of `X` in **(i, j)** (i.e. in the ith row and jth coulumn) ? Try to come up with a simple math formula.
 
@@ -113,7 +155,7 @@ Try to write the code and run it to see the output. You can find my solution [he
 
 ---
 
-####Problem-3
+####Problem-4
 You are given a number `n` by the user (who is running your code) and you have to print the following pattern on the screen
 
 ```
@@ -154,7 +196,7 @@ Try to write the code and run it to see the output. Try to give some large `n` (
 
 ---
 
-####Problem-4
+####Problem-5
 You are given a number `n` by the user (who is running your code) and you have to print the following pattern on the screen
 
 ```
@@ -191,7 +233,7 @@ I am not providing you the solution steps this time. Write it by your own. You c
 
 ---
 
-Congratulations 🥳! You make it to the end.
+Congratulations 🥳! You made it to the end.
 
 Some problems to try :
 
