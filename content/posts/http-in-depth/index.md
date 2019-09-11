@@ -12,7 +12,7 @@ tags:
   - postman
 ---
 
-In the last blog we had a high level overview of the internet.In this blog we will try to have a deeper understaending of http.
+In the [last blog](/working-of-the-net) we had a high level overview of the internet.In this blog we will try to have a deeper understaending of http.
 
 Remember in the last blog I had said that where were a bunch of things that would occur when we type a url in the search bar of a browser and hit enter.Among the the most important thing was that your computer (i.e the client) will send **HTTP REQUEST** to the server and the server after understandig the request will send an appropriate **HTTP RESPONSE**.
 
