@@ -4,7 +4,7 @@ category: "web development"
 author : "abdullah4vr"
 cover: "/images/icon.png"
 date: "2019-08-31"
-slug: "working-of-the-net"
+slug: "http-in-depth"
 tags:
   - web developement
   - http

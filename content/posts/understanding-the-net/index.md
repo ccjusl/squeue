@@ -31,4 +31,4 @@ Now the server gets that request figures out what to do ,may consult a database 
 
 ![parsed](parsed.png)
 This completes the basics of how internet works.Watch [This video][https://www.youtube.com/watch?v=qEdv_pem-JM&feature=share] to understand visually.
-In the next blog we will dive into the anatomy of an http request.Lot more to come stay tuned.
+In the [next](/http-in-depth) blog we will dive into the anatomy of an http request.Lot more to come stay tuned.
