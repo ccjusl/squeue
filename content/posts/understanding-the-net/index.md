@@ -1,6 +1,7 @@
 ---
 title: "Understanding the net"
 category: "web development"
+author : "abdullah4vr"
 cover: "/images/web.jpeg"
 date: "2019-08-31"
 slug: "working-of-the-net"
@@ -29,5 +30,5 @@ Taking a step back , whenever we go to a url a request is sent to the desired IP
 Now the server gets that request figures out what to do ,may consult a database and responds to the request with combination of HTML,CSS,Javascript .For example when our shuttlestock server recieves the above request it extracts from the request the exact image required and extract the image from the database prepares an html page and sends the page back to you as an http response.Now your browser parses the response to show you what you see.
 
 ![parsed](parsed.png)
-This completes the basics of how internet works.Watch This video to understand visually.
+This completes the basics of how internet works.Watch [This video][https://www.youtube.com/watch?v=qEdv_pem-JM&feature=share] to understand visually.
 In the next blog we will dive into the anatomy of an http request.Lot more to come stay tuned.
