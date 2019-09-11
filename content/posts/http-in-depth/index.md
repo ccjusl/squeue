@@ -25,14 +25,14 @@ Now it turns out that using the browser is not the only way to send an http reue
 
 For a change today we will use a tool called **postman** to send and understand http.You can easily download postman from [here][https://www.getpostman.com/downloads/].After downloading and signing in you will see a page like this.
 
-![postman][postman.png]
+![postman](postman.png)
 
 
 **REQUEST TYPE**
 
 Now let's go ahead and make a request.The most important part while making a request is the url to  which we are making request.Additionally there is a choice besides the url search bar .It is the type of request that we want to send.We will go through some of the important ones below.
 
-![options][options.png]
+![options](options.png)
 
 - **GET**    :  Is used when we want to retrieve data from a url.Like the html,css etc.A get request should not modify
                 any data in the server end.
@@ -48,7 +48,7 @@ Another important point to be noted is that the type of request is npt decided b
 
 So i have made a **GET** request to **www.google.com** .Below we can see the response sent by the sever.There are several parts to the response.The first tab that you woud be able to see is the body.It is the actual payload as in the actual contents sent by the browser in response to your request.
 
-![google][google.jpg]
+![google](google.jpg)
 
 Here we can see the body contains html & css . This is again what you see when you search the browser for www.google.com.The browser parses this response.You will see the exact code is you view the page source in you browser(ctrl+I).
 
@@ -62,7 +62,7 @@ As said earlier we can make a request from the search bar of a browser.All the r
 The **post** request contains information in its body i.e the information that needs to be sent to the server,for example the information of a facebook post that we are uploading.But a get request doesnot have any information in its body.But still we can send some information to the server in a get request.Here's how.
 At this point let me make a request to reddit.com from my chrome browser.Below is the homepage for reddit.
 
-![reddit][reddit.jpg]
+![reddit](reddit.jpg)
 
 Now let me search cats in the reddit search bar and hit enter.Since i am making a request from a search it has to be a get request .So how does the server know that we want to search about cats . Obviously we need to send some information to the server like the heywords searched.
 Just pause and have a look at the url.It would look something like :
