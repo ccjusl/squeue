@@ -4,7 +4,7 @@ category: "web development"
 author : "abdullah4vr"
 cover: "/images/icon.png"
 date: "2019-08-31"
-slug: "working-of-the-net"
+slug: "http-in-depth"
 tags:
   - web developement
   - http
@@ -12,7 +12,7 @@ tags:
   - postman
 ---
 
-In the last blog we had a high level overview of the internet.In this blog we will try to have a deeper understaending of http.
+In the [last blog](/working-of-the-net) we had a high level overview of the internet.In this blog we will try to have a deeper understaending of http.
 
 Remember in the last blog I had said that where were a bunch of things that would occur when we type a url in the search bar of a browser and hit enter.Among the the most important thing was that your computer (i.e the client) will send **HTTP REQUEST** to the server and the server after understandig the request will send an appropriate **HTTP RESPONSE**.
 
@@ -23,7 +23,7 @@ Now it turns out that using the browser is not the only way to send an http reue
 - from an ios/android app 
 - from many tools made for the purpose.
 
-For a change today we will use a tool called **postman** to send and understand http.You can easily download postman from [here][https://www.getpostman.com/downloads/].After downloading and signing in you will see a page like this.
+For a change today we will use a tool called **postman** to send and understand http.You can easily download postman from [here](https://www.getpostman.com/downloads/).After downloading and signing in you will see a page like this.
 
 ![postman](postman.png)
 
@@ -40,7 +40,7 @@ Now let's go ahead and make a request.The most important part while making a req
 - **PUT**    :  Is used update information at any backend database.
 - **DELETE** :  Is used to remove any data at a backend database.
 
-An important point to note is that the above request types are just part of a protocol(Remeber http is a protocol **Hyper Text Transfer Protocol).This means that using the above request types doesnot automatically do anything.It just suggest what the server should be expecting .For example if we use a post request the server would be expecting that this request will remove some data frm database.
+An important point to note is that the above request types are just part of a protocol(Remeber http is a protocol **Hyper Text Transfer Protocol**).This means that using the above request types doesnot automatically do anything.It just suggest what the server should be expecting .For example if we use a post request the server would be expecting that this request will remove some data frm database.
 
 Another important point to be noted is that the type of request is npt decided by the user but the developer of the application.
 
@@ -55,8 +55,10 @@ Here we can see the body contains html & css . This is again what you see when y
 
 Another part is the head which contains meta data about the response like the type of reponse (text,html,etc) and others.
 
-A special mention here has to bee the  **status code** as you could see the status code here is **200**.It means that the get request was successful and the response will be as expected.Any failure generates a statuc code starting with 4 or 5.for example if the page searched was not found the server sends back an empty response with status code **404**.You can learn a lot about status codes [here][https://www.tutorialspoint.com/http/http_status_codes.htm]
+A special mention here has to bee the  **status code** as you could see the status code here is **200**.It means that the get request was successful and the response will be as expected.Any failure generates a statuc code starting with 4 or 5.for example if the page searched was not found the server sends back an empty response with status code **404**.You can learn a lot about status codes [here](https://www.tutorialspoint.com/http/http_status_codes.htm)
+
 **REQUEST PARAMETERS**
+
 As said earlier we can make a request from the search bar of a browser.All the request made here are **get** type requests .**We cannot make request of any other type other than get from the url search bar**.
 
 The **post** request contains information in its body i.e the information that needs to be sent to the server,for example the information of a facebook post that we are uploading.But a get request doesnot have any information in its body.But still we can send some information to the server in a get request.Here's how.
