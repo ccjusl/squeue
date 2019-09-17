@@ -1,5 +1,5 @@
 ---
-title: "Object Oriented Programming"
+title: "Intro to Object Oriented Programming"
 category: "programming"
 author: "krishmi"
 cover: "/images/cover-oop.jpeg"
@@ -14,7 +14,7 @@ tags:
   - encapsulation
 ---
 
-If you sit for any technical interview be it for Microsoft, DE Shaw or TCS the most frequent questions are related to Object-oriented programming(OOP). So in this blog we will try to get an overview of what is OOP and will understand all it's features in depth ..
+If you sit for any technical interview be it for Microsoft( product based ), DE Shaw( FinTech ) or TCS( service based ) the most frequent questions are related to Object-oriented programming(OOP). So in this blog we will try to get an overview of what is OOP and will understand all it's features in depth, readers are expected to have basic understanding of cpp.
 
 ---
 
@@ -59,10 +59,10 @@ The Objects Oriented programming language supports all the features of procedura
 
 The most important features of Object Oriented programming are:
 
-Encapsulation
-Abstraction
-Polymorphism
-Inheritance
+####Encapsulation  
+####Abstraction  
+####Polymorphism  
+####Inheritance  
 
 We will look into each of them in detail....
 
@@ -77,8 +77,6 @@ We generally do it by making member variables private and functions public and w
 For example again consider Car, we know that we can stop car by pressing brakes, but we don't know how this brake functionality is actually implemented it is encapsulated from users of car.
 
 ![encapsulation](encapsulation.jpeg)
-
----
 
 ###Benefits of encapsulation:
 
@@ -170,14 +168,54 @@ int main()
 
 While this program works fine, what would happen if we decided to rename mValue, or change its type? We’d break not only this program, but likely most of the programs that use class Value as well!
 
-But if class was encapsulated and m_value1 was only accessible by member functions then we could have easily changed the class without breaking user code.
+But if class was encapsulated and m_value was only accessible by member functions then we could have easily changed the class without breaking user code.
+
+---
 
 ##ABSTRACTION
 
 Abstraction is modelling a data type without implementation details. It means displaying only important information to users and hiding the details similar to ENCAPSULATION.But both of them are not the same there is a subtle difference between these concepts.Abstraction solves the problem at **design** level while encapsulation does that at **implementation** level.
 Abstraction lets you focus on what the object does instead of how it does, while Encapsulation means hiding the internal details of how an object works.
 
-Let us take an example of television. Encapsulation is the internal circuits, LEDS, etc that combine to make it a TV. Abstraction is the on-off, sound, channel setting and other buttons provided to operate it.
+Let us take an example of television. Encapsulation is the internal circuits, LEDs, etc that combine to make it a TV. Abstraction is the on-off, sound, channel setting and other buttons provided to operate it.
+
+Abstraction is used to implement **polymorphism**.
+
+---
+
+##INHERITANCE
+
+Consider triangle and quadrilateral although they are different shapes they have features in common as they are shape. All shapes have perimeter, area, etc.
+
+We can say triangle and quadrilateral inherit these features from shapes.
+
+Inheritance forms an "**is a**" relationship. Triangle is a shape, apple is a fruit and so on.
+
+![shape-hieararchy](shape.png)
+
+```cpp
+class Shape
+{
+    int perimeter,area;
+};
+
+class Triangle: public Shape
+{
+    
+};
+```
+So Triangle is a shape, thus it is a **derived** class of Shape which is **base** class.Triangle inherits features area
+and perimeter from Shape.
+
+###Benefits of inheritance:
+
+**Reusability**- Allows derived class to use base class public functions this reducing code duplication.
+
+**Extensibility**- extend the base class logic in derived class
+
+**Overriding**- We can override base class function in derived class to change it's functionality.
+
+---
 
 ##POLYMORPHISM
 
@@ -217,13 +255,13 @@ For example let's consider base class Animal every animal has some way to speak,
 ```cpp
 class Animal
 {
-    virtual String speak()=0;
+    virtual string speak() = 0;
 };
 ```
 
 What does this line mean
 
-virtual speak()=0;
+virtual speak() = 0;
 
 It actually says speak is pure virtual function which means it doesn't have any implementation because it doesn't make sense for animal.
 
@@ -232,7 +270,7 @@ Now we can have Cat, Dog as derived class of Animal which have a particular styl
 ```cpp
 class Cat
 {
-    String speak()
+    string speak()
     {
         return "meow";
     }
@@ -240,7 +278,7 @@ class Cat
 
 class Dog
 {
-    String speak()
+    string speak()
     {
         return "bark";
     }
@@ -263,26 +301,10 @@ Output:
 **meow**  
 **bark**  
 
-In first case when a.speak() is evaluated, the program notes that Animal::speak() is a virtual function. In the case where **animal** is referencing the Animal portion of a Cat object, the program looks at all the classes between Animal and Cat to see if it can find a more derived function. In that case, it finds Cat::speak(). In the second case where **animal** references the Animal portion of a Dog object, the program resolves the function call to Dog::speak()
+In first case when animal.speak() is evaluated, the program notes that Animal::speak() is a virtual function. In the case where **animal** is referencing the Animal portion of a Cat object, the program looks at all the classes between Animal and Cat to see if it can find a more derived function. In that case, it finds Cat::speak(). In the second case where **animal** references the Animal portion of a Dog object, the program resolves the function call to Dog::speak()
 
 This is polymorphism.
 
-##INHERITANCE
-
-Consider triangle and quadrilateral although they are different shapes they have features in common as they are shape. All shapes have perimeter, area, etc.
-
-We can say triangle and quadrilateral inherit these features from shapes.
-
-Inheritance forms an "**is a**" relationship. Triangle is a shape, apple is a fruit and so on.
-
-![shape-hieararchy](shape.png)
-
-###Benefits of inheritance:
-
-**Reusability**- Allows derived class to use base class public functions this reducing code duplication.
-
-**Extensibility**- extend the base class logic in derived class
-
-**Overriding**- We can override base class function in derived class to change it's functionality.
+---
 
 That's all I wanted to tell you about OOP, I hope after this you will be able to answer questions related to OOP confidently. :)
