@@ -50,12 +50,11 @@ Some popular Java applications are JPC, ThinkFree, NASA World Wind, Tommy Jr, Bl
 ![java](java.jpg)
 ##DIFFERENCES: 👊👊👊👊
 
-**`1) Simple Hello World Program`**
+1.**` Simple Hello World Program`**
 
-```bash
+```cpp
 C++:
-
-#include
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -64,7 +63,7 @@ int main()
 }
 ```
 
-```bash
+```java
 
 Java:
 public class SimpleProgram
@@ -79,55 +78,55 @@ public class SimpleProgram
 
 
 
-**`2) Interpreter-Compiler`**
+2.**` Interpreter-Compiler`**
 C++ is a compiled language whereas Java is both compiled and interpreted language.
 
 
 
 
-**`3) Closeness to Hardware`**
+3.**` Closeness to Hardware`**
 When compared to Java, C++ is a low-level language, it’s closer to the hardware. Java is not close to the hardware
 
 
 
-**`4) Cross Platform Apps`**
+4.**` Cross Platform Apps`**
 Java is platform independent that ,i.e, it can run on any computer/platform on which we have a JVM installed.
 C++ won't run on other operating systems.We need to recompile for different OS to run it.
 
 
 
-**`5) Pointers`**
+5.**` Pointers`**
 C++ has complete Pointers support.Java has limited Pointer support.
 
 
 
-**`6)Threads`**
+6.**`Threads`**
 Java supports threads but C++ doesn't support it.
 
 
 
-**`7)Default arguments`**
+7.**`Default arguments`**
 C++ supports default arguments whereas Java doesn't have any such thing.
 
 
 
-**`8)Destructor`**
+8.**`Destructor`**
 C++ supports Destructor whereas Java doesn't.
 
 
-**`9)Inheritance`**
+9.**`Inheritance`**
 Java doesn't support Multiple Inheritance whereas C++ does support it.
 
 
-**`10)Operator Overloading`**
+10.**`Operator Overloading`**
 C++ supports overloading operators according to the convenience of the programmer whereas Java doesn't have this facility.
 
 
-**`11)Structs and Unions`**
+11.**`Structs and Unions`**
 C++ supports these user defined datatypes whereas Java doesn't.
 
 
-**`12)Memory Safety`**
+12.**`Memory Safety`**
 C++ is not a memory-safe language. You can perform memory management, which is a great advantage. But memory errors may occur and serious issues like crashes may take place at the time of the program’s
 execution. On the other hand, Java doesn’t allow memory manipulation, it’s system controlled. So this kind of issues will not appear. Java is a memory-safe language.
 
@@ -138,23 +137,23 @@ execution. On the other hand, Java doesn’t allow memory manipulation, it’s s
 
 ##SIMILARITIES:🤝🤝🤝🤝
 
-**`1)Syntax`**
+1.**` Syntax`**
 Both have comparable and easy to understand syntaxes.
 
 
-**`2)Object Oriented`**
+2.**` Object Oriented`**
 Both are Object Oriented Languages.
 ![oop](oop.jpg)
-**`3)Main`**
+3.**` Main`**
 Execution starts from the main() function in both the languages.
 
 
-**`4)Comments`**
+4.**` Comments`**
 Comments are identical in C++ and java
 
 
 
-**`5)Basic Structure`**
+5.**`Basic Structure`**
 Primitive data types, loops, conditional statements, conditional operators, arithmetic operators, classes, variable definitions, variable initializations, value assignments, etc. are similar.
 
 
