@@ -21,7 +21,8 @@ module.exports = {
   siteSocialUrls: [
     "https://github.com/jusl",
     "https://twitter.com/CodeClubJUSL",
-    "mailto:codeclubjusl@gmail.com"
+    "mailto:codeclubjusl@gmail.com",
+    "https://www.linkedin.com/company/code-club-jusl"
   ],
   postDefaultCategoryID: "Tech", // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
