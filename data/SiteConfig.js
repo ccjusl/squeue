@@ -19,7 +19,7 @@ module.exports = {
   googleAnalyticsID: "UA-145071413-1", // GA tracking ID.
   disqusShortname: "squeue", // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [
-    "https://github.com/jusl",
+    "https://github.com/ccjusl",
     "https://twitter.com/CodeClubJUSL",
     "mailto:codeclubjusl@gmail.com",
     "https://www.linkedin.com/company/code-club-jusl"
@@ -29,7 +29,7 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/jusl",
+      url: "https://github.com/ccjusl",
       iconClassName: "fa fa-github" // Disabled, see Navigation.jsx
     },
     {

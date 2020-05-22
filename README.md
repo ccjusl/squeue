@@ -18,7 +18,7 @@ A blog by Codeclub jusl.
 ```sh
 git clone https://github.com/<your_username>/<repo_name>.git # Clone the project
 cd repo_name
-git remote set-url origin https://github.com/jusl/squeue.git
+git remote set-url origin https://github.com/ccjusl/squeue.git
 git remote set-url --push origin https://github.com/<your_username>/squeue.git
 yarn install # Please do not use npm
 yarn develop # or, `gatsby develop`

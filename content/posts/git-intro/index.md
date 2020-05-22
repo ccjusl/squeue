@@ -29,7 +29,7 @@ Once you've done the essentials and explored the github website a little it's ti
 Now, let's say you're exploring github and come across someone's repository (Project Folders on Git are usually known as repositories) you would like to make a contribution to. Usually, when you spot a bug in someone's code, or you want to implement/add something to the repository, you file an issue, in the issues tab. ![alt text](issues.png "issues")
 Once you file an issue, someone who manages that repository, will look into the issue and if you show interest in solving the issue, they might assign it to you for resolving it.
 
-For now, since we are just looking to add our article to the blog, we will skip over this part. Head over to `https://github.com/jusl/squeue` . One the top left, you'll see a button saying 'Fork'. Click on it.
+For now, since we are just looking to add our article to the blog, we will skip over this part. Head over to `https://github.com/ccjusl/squeue` . One the top left, you'll see a button saying 'Fork'. Click on it.
 
 ![alt text](fork.png "Forking")
 When you 'Fork' a repository, you are making a clone of it, for your own account. If you
@@ -117,12 +117,12 @@ Here is what I did. You can see that the number of remote branches changed after
     [clickbait@ubuntu:~/d/jusl/squeue]$ git remote -v
     origin  https://github.com/karansinghgit/squeue.git (fetch)
     origin  https://github.com/karansinghgit/squeue.git (push)
-    [clickbait@ubuntu:~/d/jusl/squeue]$ git remote add upstream https://github.com/jusl/squeue.git
+    [clickbait@ubuntu:~/d/jusl/squeue]$ git remote add upstream https://github.com/ccjusl/squeue.git
     [clickbait@ubuntu:~/d/jusl/squeue]$ git remote -v
     origin  https://github.com/karansinghgit/squeue.git (fetch)
     origin  https://github.com/karansinghgit/squeue.git (push)
-    upstream        https://github.com/jusl/squeue.git (fetch)
-    upstream        https://github.com/jusl/squeue.git (push)
+    upstream        https://github.com/ccjusl/squeue.git (fetch)
+    upstream        https://github.com/ccjusl/squeue.git (push)
 
 ### Fetching from Upstream
 
