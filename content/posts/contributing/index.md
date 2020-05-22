@@ -27,7 +27,7 @@ tags:
 
 So, you are now ready with all the tools required to contribute. To run this blog locally on your pc, follow these steps-
 
-1. Fork [the repository](https://github.com/jusl/squeue).
+1. Fork [the repository](https://github.com/ccjusl/squeue).
 2. Clone the repository-
 
 ```bash
@@ -38,7 +38,7 @@ git clone https://github.com/<your_username>/<repo_name>.git # Clone the project
 
 ```bash
 cd squeue
-git remote set-url origin https://github.com/jusl/squeue.git
+git remote set-url origin https://github.com/ccjusl/squeue.git
 git remote set-url --push origin https://github.com/<your_username>/squeue.git
 ```
 
@@ -124,7 +124,7 @@ This is all you need to contribute a new article. Thanks for taking the time to 
 ##Issues
 
 ####Reporting an issue
-If you find any issue, a typo, correction needed or want to request an article etc., please create an issue in the `Issues` section of the [repository](https://github.com/jusl/squeue)
+If you find any issue, a typo, correction needed or want to request an article etc., please create an issue in the `Issues` section of the [repository](https://github.com/ccjusl/squeue)
 
 ####Want to improve an article _not_ written by you?
 Just update the article, add your name to the _edited by_ part at the bottom and create a PR.
@@ -140,8 +140,8 @@ yarn develop
 
 ---
 
-I hope this post made the process for contributing to this blog clear and answered some questions you might had. So why not [start contributing](https://github.com/jusl/squeue) immediately?
+I hope this post made the process for contributing to this blog clear and answered some questions you might had. So why not [start contributing](https://github.com/ccjusl/squeue) immediately?
 
 ###Links
 **Blog**: https://squeue.netlify.com<br/>
-**Github**: https://github.com/jusl/squeue
+**Github**: https://github.com/ccjusl/squeue
