@@ -1,7 +1,7 @@
 ---
 title: "C++ vs Java"
 category: "programming"
-author: "gauravllh03"
+author: "gauravllh"
 cover: "images/c++java.jpg"
 date: "2019-11-15"
 slug: "c++-vs-java"
