@@ -1,7 +1,7 @@
 ---
 title: Amazon interview experience for SDE intern
 date: "2020-09-13"
-author: "n00b_coder"
+author: "noob-coder"
 category: "Interview experience"
 slug: "Amazon-interview-experience-for-SDE-intern "
 cover: "/images/amazon.png"
